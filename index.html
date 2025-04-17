@@ -17,6 +17,7 @@
         <!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" async defer></script>
     </head>
     <body>
         <!-- <div class="title-bar" data-responsive-toggle="example-nav" data-hide-for="medium">
@@ -24,7 +25,7 @@
             <div class="title-bar-title">Menu</div>
         </div> -->
         
-        <div class="navigation_bar" id="example-nav">
+        <!-- <div class="navigation_bar" id="example-nav">
             <div class="navigation_bar_left">
                 <ul class="dropdown menu" data-dropdown-menu>
                     <li>
@@ -42,13 +43,41 @@
                     <li><button type="button" class="button">Go To INPRS Home</button></li>
                 </ul>
             </div>
+        </div> -->
+        
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+          <div class="title-bar-title">Menu</div>
         </div>
         
+        <div class="top-bar" id="example-menu">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="#">
+                  <img src="https://assets.codepen.io/2146429/logo_1.png" class="logo" alt="" />
+                </a>
+              </li>
+              <li>
+                <p class="brand-word">Indiana Public Retirement System</p>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><a href="#">Search Your Balance</a></li>
+              <li><a href="#">What is Reclaim Your Retirement?</a></li>
+              <li><a href="#">Who Should Search the Database?</a></li>
+              <li><a href="#">Frequently Asked Questions</a></li>
+              <li class="nav-button">
+                <a href="https://www.in.gov/inprs/" class="button return" target="_blank">Go To INPRS Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
         
-        
-        
-        
-        <!--<nav class="navigation_bar reclaim-nav" data-sticky data-options="marginTop:0;" style="width:100%;">
+        <nav class="navigation_bar reclaim-nav" data-sticky data-options="marginTop:0;" style="width:100%;">
           <ul id="navbar">
             <li><a href="#">
                 <img src="https://assets.codepen.io/2146429/logo_1.png" class="logo" alt="" />
@@ -61,11 +90,11 @@
             <li class="nav-button">
               <a href="https://www.in.gov/inprs/" class="button return" target="_blank">Go To INPRS Home</a>
             </li>
+          </ul>
         
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" type="button">
               <i class="ph ph-list"></i>
             </button>
-          </ul>
         
         </nav>
         
@@ -83,7 +112,7 @@
             </div>
           </ul>
         
-        </div>-->
+        </div>
         
         
         <div class="reclaim_hero row align-center">

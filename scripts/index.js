@@ -51,23 +51,54 @@ faqQuestions.forEach((question) => {
   });
 });
 
+// // NAVBAR
+// document.addEventListener("DOMContentLoaded", () => {
+//   const hamburger = document.getElementById("hamburger");
+//   const mobileNav = document.getElementById("mobileNav");
+//   const overlay = document.getElementById("overlay");
+
+//   if (!hamburger || !mobileNav) {
+//     console.warn("Mobile navigation elements not found");
+//     return;
+//   }
+
+//   hamburger.addEventListener("click", () => {
+//     console.log("shit");
+//     mobileNav.classList.toggle("active");
+//     overlay.classList.toggle("active");
+
+//     hamburger.querySelector("i").classList.toggle("fa-bars");
+//     hamburger.querySelector("i").classList.toggle("fa-times");
+//   });
+// });
+
 // NAVBAR
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const mobileNav = document.getElementById("mobileNav");
-  const overlay = document.getElementById("overlay");
-
-  if (!hamburger || !mobileNav) {
-    console.warn("Mobile navigation elements not found");
-    return;
+  
+  if (hamburger && mobileNav) {
+    console.log("Navigation elements found and ready");
+    
+    hamburger.addEventListener("click", () => {
+      console.log("Hamburger clicked");
+      
+      // Toggle mobile nav visibility
+      mobileNav.classList.toggle("active");
+      
+      // Toggle hamburger icon
+      const icon = hamburger.querySelector("i");
+      if (icon) {
+        if (icon.classList.contains("ph-list")) {
+          icon.classList.remove("ph-list");
+          icon.classList.add("ph-x");
+        } else {
+          icon.classList.remove("ph-x");
+          icon.classList.add("ph-list");
+        }
+      }
+    });
+  } else {
+    console.error("Navigation elements not found");
   }
-
-  hamburger.addEventListener("click", () => {
-    console.log("shit");
-    mobileNav.classList.toggle("active");
-    overlay.classList.toggle("active");
-
-    hamburger.querySelector("i").classList.toggle("fa-bars");
-    hamburger.querySelector("i").classList.toggle("fa-times");
-  });
 });
