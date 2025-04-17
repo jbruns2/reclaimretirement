@@ -146,8 +146,8 @@ body {
   background-color: #f0f0f0;
   font-family: "greycliff-cf", sans-serif;
 }
-.top-bar ul,
-.top-bar {
+.navigation_bar ul,
+.navigation_bar {
   background-color: #fefefe;
 }
 
@@ -194,12 +194,12 @@ reclaim-nav {
   padding: 1rem 2rem;
 }
 
-.main {
+.reclaim_banner {
   margin: auto;
   padding: 50px;
 }
 
-.mainRight {
+.reclaim_bannerRight {
   padding: 1rem;
 /*   width: 1000px; */
   position: relative;
@@ -252,7 +252,7 @@ reclaim-nav {
   font-family: "VT323", serif;
 }
 
-/* .view-page {
+/* .view_balance-page {
   margin: auto;
   background-color: white;
   padding: 50px;
@@ -262,7 +262,7 @@ reclaim-nav {
   align-items: center;
 } */
 
-.view {
+.view_balance {
   background-color: white;
 }
 
@@ -590,12 +590,12 @@ i.fas {
     transition: opacity 0.3s ease;
     min-height: 100dvh;
 }
-  .main {
+  .reclaim_banner {
     margin-top: 50px;
     text-align: center;
   }
 
-  .mainRight {
+  .reclaim_bannerRight {
     padding: 0;
   }
     
@@ -640,7 +640,7 @@ i.fas {
         width: 80%;
     }
     
-    .mainRight, .indiana {
+    .reclaim_bannerRight, .indiana {
         width: 80%;
     }
 
@@ -671,13 +671,13 @@ i.fas {
 
 /* Tablet and Mid-Sized Screens */
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-    .main {
+    .reclaim_banner {
         margin: auto;
         width: 50%;
         flex-direction: column;
     }
 
-    .mainRight {
+    .reclaim_bannerRight {
         text-align: center;
         width: 50%;
     }
@@ -685,7 +685,7 @@ i.fas {
 
 /* Larger Screens but still Responsive */
 @media screen and (min-width: 416px) and (max-width: 1200px) {
-    .main {
+    .reclaim_banner {
         margin: auto;
         padding: 50px 130px;
     }
